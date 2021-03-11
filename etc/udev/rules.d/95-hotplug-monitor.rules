@@ -1,0 +1,9 @@
+# Rule for executing commands when an external screen is plugged in.
+# Credits go to: 
+# - http://unix.stackexchange.com/questions/4489/a-tool-for-automatically-applying-randr-configuration-when-external-display-is-p
+# - https://github.com/codingtony/udev-monitor-hotplug
+# - https://unix.stackexchange.com/questions/281872/udev-monitor-hotplug-rule-not-running
+ 
+# Adapt user and script dir to your needs 
+ACTION=="change", SUBSYSTEM=="drm", ENV{HOTPLUG}=="1" RUN+="/bin/su - tuhlmann -c '$HOME/entw/aktuell/hotplug_monitor/hotplug_monitor.sh'"
+
