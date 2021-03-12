@@ -1,0 +1,5 @@
+2021-03-12_07-12-56
+DISPLAY: 
+XAUTHORITY: 
+status of /sys/class/drm/card0-DP-2/status: connected
+run connect

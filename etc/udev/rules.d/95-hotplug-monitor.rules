@@ -5,5 +5,5 @@
 # - https://unix.stackexchange.com/questions/281872/udev-monitor-hotplug-rule-not-running
  
 # Adapt user and script dir to your needs 
-ACTION=="change", SUBSYSTEM=="drm", ENV{HOTPLUG}=="1" RUN+="/bin/su - tuhlmann -c '$HOME/entw/aktuell/hotplug_monitor/hotplug_monitor.sh'"
+ACTION=="change", SUBSYSTEM=="drm", ENV{HOTPLUG}=="1" RUN+="/bin/su - tuhlmann -c '$HOME/entw/aktuell/hotplug-monitor/hotplug_monitor.sh'"
 
